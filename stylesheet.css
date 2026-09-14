@@ -8,13 +8,7 @@
 	font-family: -apple-system, BlinkMaxSystemFont, "segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Responsive design based on screen size, changeing from horizontal to vertical layout */
-@media (max-width: 850px) {
-    .main-header {
-        /* Adjust from horizontal to vertical layout */
-        flex-direction: column;
-    }
-}
+
 
 .main-header {
 	/* Sets up a flexbox that renders elements horizontally and takes up as much space as it needs */
@@ -27,6 +21,22 @@
 	padding: 24px 80px;
 	/* Set a gap between the main elements in the header eg the h1 element and the nav */
 	gap: 32px;
+}
+
+/* Responsive design based on screen size, changeing from horizontal to vertical layout */
+@media (max-width: 850px) {
+    .main-header {
+        /* Adjust from horizontal to vertical layout */
+        flex-direction: column;
+    }
+	
+	.nav-links {
+        flex-direction: column;
+    }
+}
+
+.main-header h1 {
+	white-space: nowrap;
 }
 
 .nav-container {
