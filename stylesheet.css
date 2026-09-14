@@ -1,0 +1,87 @@
+* {
+	/* Resets margin and removes excess spacing */
+	margin: 0;
+	padding: 0;
+	/* Counts border and padding when adjusting element width and height */
+	box-sizing: border-box;
+	/* Font waterfall to provide quick loading and consistant formatting */
+	font-family: -apple-system, BlinkMaxSystemFont, "segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Responsive design based on screen size, changeing from horizontal to vertical layout */
+@media (max-width: 850px) {
+    .main-header {
+        /* Adjust from horizontal to vertical layout */
+        flex-direction: column;
+    }
+}
+
+.main-header {
+	/* Sets up a flexbox that renders elements horizontally and takes up as much space as it needs */
+	display: flex;
+	/* Distributes space between elements evenly */
+	justify-content: space-between;
+	/* Items are verfically spaced in the center of their element */
+	align-items: center;
+	/* Padding on the outside of the header element */
+	padding: 24px 80px;
+	/* Set a gap between the main elements in the header eg the h1 element and the nav */
+	gap: 32px;
+}
+
+.nav-container {
+	/* Sets up a flexbox that renders elements horizontally and takes up as much space as it needs */
+	display: flex;
+	/* Items are vertically centered within the container */
+	align-items: center;
+}
+
+.nav-links {
+	/* Sets up a flexbox that renders elements horizontally and takes up as much space as it needs */
+	display: flex;
+	/* Removed the blue and underlining of links */
+	list-style-type: none;
+	/* Sets a minimum gap between the nav links */
+	gap: 24px;
+    /* Items are vertically centered within the container */
+	align-items: center;
+}
+
+.nav-links a {
+	/* Removed the blue and underlining of links */
+	text-decoration: none;
+	/* Sets text color to black */
+	color: #000000;
+	/* Makes text bolder than normal right in the middle*/
+	font-weight: 500;
+	/* Sets font size to 1rem which is typically 16px, but is adjusted based on user settings and more accessable */
+	font-size: 1rem;
+}
+
+.btn-resume {
+    /* Allows the Resume button to be inline with the other nav links, but also customize the width and height */
+	display: inline-block;
+    /* Removed the blue and underlining of links */
+	text-decoration: none;
+    /* Make the button more rounded */
+	border-radius: 4px;
+    background-color: #7BA5B8;
+    padding: 8px 16px;
+}
+
+/*  
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #7BA5B8;
+}
+*/
